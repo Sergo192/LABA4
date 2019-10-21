@@ -1,0 +1,45 @@
+.block{
+    width: 33.33%;
+    height: 100%;
+    
+}
+.container{
+    height: 400px;
+    display: flex;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+@media screen and (orientation:portrait){
+    .container{
+        flex-direction: column;   
+        height: 800px;
+    }
+    .block{
+        width: 100%
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .container{
+        flex-direction: row;
+    }   
+}
+
+@media (max-width:825px) and (orientation:landscape){
+    .block{
+        height:250px;
+    }
+} 
+
+@media (min-width:730px) and (orientation:portrait){
+    .container{
+        height:1350px;
+    }
+}
